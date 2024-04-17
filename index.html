@@ -1,0 +1,490 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+
+  a{text-decoration: none;color: white;}
+
+  body,p{margin: 0;}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #FF376E;
+    padding: 8px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav_menu li{margin:0 40px;}
+
+.nav_menu{
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 0 30 0 -100px;
+    padding: 0 0 0 100px;
+    text-decoration: none;
+    font-family: Pretendard-Regular;
+
+}
+.thunder{left:50% ;
+        position: absolute;
+        transform: translateX(-50%);
+        margin-top:-150px;
+        z-index: 1;}
+
+.titleimage {
+    position: absolute;
+    top: 300; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-top: -170px; 
+}
+
+.first{padding-top: 300px;}
+
+.sector1 {
+          width: min-content;
+          white-space: nowrap;
+          height: auto;
+          text-align: center;
+          margin: auto;
+          display: flex;
+        justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      }
+.sword {width: 1100;margin: auto;
+        padding-top: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;}
+
+.mirror{width: 1100;margin: auto;
+        padding-top: 300px;
+        display: flex;
+        flex-wrap: wrap;justify-content: space-between
+        ;}
+
+
+
+.resize{width: 765px;height: 545px;}
+
+.blink {z-index: -5;display: flex;justify-content: center;}
+.blinkimage{width: 90%;height: 90%;margin: auto;}
+
+#com1 {
+  display: flex; 
+  justify-content: center;
+margin: auto;padding-top: 84px;}
+
+.composition1{width: 1100;height: auto;}
+
+.a6 {font-family: Pretendard-Bold;
+     font-size: 28px;
+    }
+
+.a5{font-family: Ownglyph_meetme-Rg;
+  font-size: 32px;
+  line-height: 52px;
+  margin-top: 0;align-items: flex-end;
+  flex-flow: row nowrap;
+  display: flex;}
+
+  .what2{display: flex;justify-content: center;padding-top: 28px;}
+
+  .tr1c{width: 219px;
+        height:267px;}
+        
+  .conalign{display: flex;
+            flex-direction: column;
+            justify-content: space-between;}
+
+.text1 {display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-family:Ownglyph_meetme-Rg;
+        font-size: 22px;}
+
+.conalign2{display: flex;
+            flex-direction: column;
+            justify-content: space-between;}
+
+.explode {width: 1100;margin: auto;
+        padding-top: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;}
+
+.conalign3 {display: flex;
+            flex-direction: column;
+            justify-content: space-between;}
+
+.conalign5 {display: flex;
+  flex-direction: column;
+  width: 1100px;
+  justify-content: center;
+  align-items: center;
+  }
+            
+.second{top: 5932px;
+left: 0px;
+width: 100%;
+height: 3339px;
+background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFF7F9FA 16%, #FBCDDE 45%, #FFE3EC 81%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+opacity: 1; padding-top: 100px;
+justify-content: center;
+display: flex;
+margin: auto;}
+
+.conalign4{display: flex;
+  justify-content: center;
+  flex-direction: column
+  ;width: 1100px;
+align-items: center;}
+
+
+.conalignfix {width: 803px;}
+
+.spacea2 {padding-top: 60px;}
+
+.thirdp {display: flex;
+  justify-content: center;
+  flex-direction: column
+  ;width: 1100px;
+align-items: center;
+margin: auto;}
+
+.forth{
+    width: 100%;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFF7F9FA 16%, #FBCDDE 45%, #FFE3EC 81%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    justify-content: start;
+    display: flex;
+    margin: 0;
+    padding-top: 500px;
+    flex-direction: column;
+    align-items: center;}
+
+.confix2 {height: 86px;width: 803px;}
+
+.spacing1{padding-top: 100px; padding-bottom: 150px;}
+
+.conalign5 p {background-color:#FF4578 ;
+  font-family: Ownglyph_meetme-Rg;
+  font-size: 32px;color: white;
+  text-align: center;
+  line-height: 52px;display: inline-block; width: 1100px;
+  margin-top: 20px;}
+
+.fifth{display: flex; 
+  flex-direction: column;
+  width: 1100px;
+  justify-content: center;align-content: center;
+  margin: auto;
+  padding-top: 500px;}
+
+.resize2{width: 803px;height: 86px;margin: auto;}
+
+.sixth{width: 100%;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFF7F9FA 16%, #FBCDDE 45%, #FFE3EC 81%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    justify-content: start;
+    display: flex;
+    margin: 0;
+    padding-top: 500px;
+    flex-direction: column;
+    align-items: center}
+
+  .resize3 {width: 1564px;}
+}
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+</style>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar">
+
+      <div class="nav_logo">
+        <img src="header logo.png">
+      </div>
+
+      <ul class="nav_menu">
+        <li><a href="#">main</a></li>
+        <li><a href="#">what is</a></li>
+        <li><a href="#">who for</a></li>
+        <li><a href="#">why made</a></li>
+        <li><a href="#">function</a></li>
+        <li><a href="#">membership</a></li>
+        <li><a href="#">review</a></li>
+      </ul>
+
+      <div></div>
+
+    </nav>
+
+    
+</header>
+<section>
+
+ 
+  <div class="thunder">
+    <img src="main thunder.png" alt="">
+  </div>
+
+  <div class="blink">
+    <img class="blinkimage" src="blink.gif" alt="">
+  </div>
+
+  <div class="titleimage">
+    <img src="titlelogo.png">
+  </div>
+
+
+</section>
+  
+<section class="first">
+
+  <div class="sector1"">
+    <img src="whatis.png">
+  
+  </div>
+
+</section>
+
+<section>
+  <div id="com1">
+    <img class="composition1" src="composition.gif">
+  </div>
+
+  <div class="what2">
+    <img src="whatind.png">
+  </div>
+
+  <p class="text1">*상기된 영상과 같이 손잡이와 미러볼은 탈부착이 가능합니다. 추후 커스텀 서비스를 이용해 자신만의 개성을 뽐내보세요!</p>
+
+  
+  <div class="sword">
+
+    <div class="conalign">
+    <img class="tr1c" src="tr1.png">
+
+    <p class="a5">다가오는 위협을 앙증맞은<br>
+      색깔의 검을 이용해
+      즉시<br>
+      저 세상으로 보내주세요.</p>
+    </div>
+ 
+      
+    <img class="resize"src="sword.gif" alt="">
+
+   
+  
+  </div>
+
+  <div class="mirror">
+    <img class="resize" src="mirrorball.gif" alt="">
+     
+
+     <div class="conalign2">
+      <img src="c1.png">
+    <p class="a5">위협이 제거된 후 남게된
+      <br>죄책감은 오직 번쩍이는<br>
+      미러볼에 맡겨버리세요.</p>
+      </div>
+  </div>
+
+  <div class="explode">
+
+    <div class= "conalign3">
+    <img src="ex1.png"">
+    
+    <p class="a5">절대로 외롭게 최후를<br>
+      맞이하지 마세요! 원수는<br>
+      꼭 함께 데려가셔야죠!
+    </div>
+ 
+      
+    <img class="resize" src="shatter.gif"" alt="">
+
+   
+  
+  </div>
+
+</section>
+
+<section class="second">
+
+  <div class="conalign4">
+
+<div class = "conalignfix">
+  <img src="ktsis.png" alt="">
+</div>
+
+<div>
+<p class="text1">*KTS는 KAWAI TASER & SWORD 의 약자입니다.
+</div>
+
+<div>
+<img class ="spacea2"src="a1.png" alt="">
+</div>
+<div>
+<img class ="spacea2" src="a2.png" alt="">
+</div>
+<div>
+<img src="a3.png" alt="">
+</div>
+
+</div>
+
+</section>
+
+<section class="thirdp">
+  <div>
+    <img src="whymade.png" alt="">
+  </div>
+
+  <div>
+    <img src="thirdpage.png" alt="">
+  </div>
+</section>
+
+<section class="forth">
+
+<div class="confix2">
+  <img  src="function.png" alt="">
+</div>
+
+<div class="conalign5">
+<div class="spacing1">
+  <img src="b5.png" alt="">
+  <p>
+    스턴건과 도검을 원클릭으로 스위칭 할 수 있습니다.<br>
+    용품 하나 가격에 두개의 호신용품을 만나보세요. 
+    </p>
+</div>
+
+<div class="spacing1">
+  <img src="b1.png" alt="">
+  <p>
+    
+제압 성공시 제품 손잡이에서 디스코 음악과 함께 미러볼이 돌아가며 사방으로<br>
+빛을 뿜습니다. 이는 제압의 죄책감을 덜기 위한 심리적 장치입니다.
+
+    </p>
+</div>
+
+<div class="spacing1">
+  <img src="b2.png" alt="">
+  <p>
+    
+폭력적인 자신의 모습에 자책할 고객을 위해 우리는 일련의 제압 과정의 시작을<br>
+고양이 울음소리와 함께합니다.(스위칭 버튼과 발사 버튼 사용시에 나옵니다.)
+
+    </p>
+</div>
+
+<div class="spacing1">
+  <img src="b3.png" alt="">
+  <p>
+   
+호신용품은 만약을 위한 제품이지 일상을 위하지 않죠, 저희는 이점에서 착안해<br>
+블루투스 스피커 기능을 해당 제품에 탑재하였습니다.
+
+    </p>
+</div>
+
+<div class="spacing1">
+  <img src="b4.png" alt="">
+  <p>
+    
+적을 제압하는데 실패했을 경우 저희 제품은
+최소한 고객님 혼자 잔혹한 결말을 맞게하지<br> 않을 것입니다. 스위칭 기능과 
+발사기능을 3초간 누르게 되면 ‘동귀어진 시퀀스’가 발동됩니다.
+
+    </p>
+</div>
+
+</div>
+</section>
+
+<section class="fifth">
+  
+  <img class="resize2"src="membership.png">
+
+<div class=" spacing1">
+<img src="fifthmem.png">
+</div>
+
+</section>
+
+<section class="sixth">
+  <div>
+  <img src="customer.png">
+ </div>
+  <div class="spacing1">
+  <img class="resize3" src="senten.png">
+</div>
+</section>
+
+<div class="footer">
+  
+</div>
+
+</body>
+
+
+</html>
+
